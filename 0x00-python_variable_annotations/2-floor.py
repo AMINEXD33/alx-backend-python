@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import math
-
 """this module contains a function that floors a float"""
+
+import math
 
 
 def floor(n: float) -> int:
