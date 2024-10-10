@@ -2,7 +2,7 @@
 """ module that contain a function to add two numbers"""
 
 
-def add(a: int, b: int) -> int:
+def add(a: float, b: float) -> float:
     """
     add two numbers and return the result
     """
