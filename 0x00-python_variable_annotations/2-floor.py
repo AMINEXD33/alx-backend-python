@@ -4,7 +4,7 @@ import math
 """this module contains a function that floors a float"""
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     this function floors a giving number
     """
