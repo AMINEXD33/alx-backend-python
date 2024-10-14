@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""a module that has an async function :)"""
-
-from asyncio import sleep as asyn_sleep
-from random import uniform as ran_uniform
+"""Defines an asynchronous coroutine"""
+import asyncio
+import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """
-    an async function that takes a max delay , waits it out
-    then return it
-    """
-    delay = ran_uniform(0, max_delay)
-    await asyn_sleep(delay)
-    return delay
+    """Waits for a random delay between 0 and max_delay"""
+    random_number = random.uniform(0, max_delay)
+    await asyncio.sleep(random_number)
+    return random_number
