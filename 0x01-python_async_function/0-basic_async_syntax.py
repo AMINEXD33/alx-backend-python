@@ -10,6 +10,6 @@ async def wait_random(max_delay: int = 10) -> float:
     an async function that takes a max delay , waits it out
     then return it
     """
-    delay: float = ran_uniform(0, max_delay)
+    delay = ran_uniform(0, max_delay)
     await asyn_sleep(delay)
     return delay
