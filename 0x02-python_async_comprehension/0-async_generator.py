@@ -6,7 +6,7 @@ from typing import Generator
 from random import uniform as rand_uniform
 
 
-async def async_generator() -> Generator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Yield 10 different values that are
     between 0 and 10, with a 1-second delay between each.
