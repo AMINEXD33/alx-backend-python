@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """ a module to test utils """
-from utils import access_nested_map
 import unittest
 from parameterized import parameterized, parameterized_class
+from unittest.mock import Mock, patch
+from utils import (
+    access_nested_map,
+    get_json,
+    memoize,
+)
 
 
 class TestAccessNestedMap(unittest.TestCase):
@@ -53,4 +58,4 @@ class TestMemoize(unittest.TestCase):
             memo_fxn.assert_called_once()
 
 
-# unittest.main()
+unittest.main()
