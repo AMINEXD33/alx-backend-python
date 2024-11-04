@@ -28,9 +28,9 @@ class TestAccessNestedMap(unittest.TestCase):
             ]
     )
     def test_access_nested_map_exception(self, nested_map, path, expected):
-        """test raising errors"""
+        """test raising errors if params are not right"""
         with self.assertRaises(expected):
             access_nested_map(nested_map, path)
 
 
-unittest.main()
+# unittest.main()
